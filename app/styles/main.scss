@@ -23,3 +23,7 @@ $icon-font-path: '../fonts/';
 .btn:focus, .btn:active {
   outline: none;
 }
+
+.btn {
+  text-transform: uppercase;
+}
