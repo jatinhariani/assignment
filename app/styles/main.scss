@@ -2,8 +2,11 @@ $icon-font-path: '../fonts/';
 @import 'variables';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 @import 'common/header';
+@import 'home/index';
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -14,4 +17,9 @@ $icon-font-path: '../fonts/';
 
 .container-fluid {
   max-width: 1200px;
+}
+
+// patch outline
+.btn:focus, .btn:active {
+  outline: none;
 }

@@ -1,0 +1,90 @@
+.content-slider-container {
+  position: relative;
+}
+.content-slider {
+  padding: 40px 45px;
+  width: 100%;
+  position: absolute;
+  bottom: 80px;
+  background: $content-slider-bg;
+}
+
+// todo: hack for 500px fix. rework.
+.background-slider {
+  .slick-slide {
+    & > div {
+      height: 500px;
+    }
+  }
+}
+
+.background-slide {
+  height: 500px;
+  background-size: cover;
+  display: block;
+  &.background-slide-1 {
+    background-image: url('https://source.unsplash.com/1920x500');
+  }
+  &.background-slide-2 {
+    background-image: url('https://source.unsplash.com/user/erondu/1600x900');
+  }
+  &.background-slide-3 {
+    background-image: url('https://source.unsplash.com/user/jackie/1600x900');
+  }
+}
+
+.content-slide {
+  position: relative;
+  color: $body-bg;
+  .content-slide-text {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
+
+// todo: move to a button definition maybe?
+.content-slide-cta {
+  text-transform: uppercase;
+  color: $link-color;
+  font-weight: 700;
+  font-size: $font-size-base;
+  border-color: $body-bg;
+  padding-left: 40px;
+  padding-right: 40px;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.content-slide-title {
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-top: 0;
+  color: $body-bg;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  border-radius: 0px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  line-height: 24px;
+  background-color: $content-slider-bg;
+  &:hover, &:active {
+    background-color: darken($content-slider-bg, 10%);
+  }
+  &:focus {
+    background-color: $content-slider-bg;
+  }
+}
+
+.slick-next {
+  left: 40px;
+}

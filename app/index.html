@@ -11,6 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -40,7 +41,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-              <img src="https://source.unsplash.com/user/erondu/200x80" alt="" class="brand-image">
+              <img src="https://source.unsplash.com/200x80" alt="" class="brand-image">
             </a>
           </div>
       
@@ -68,7 +69,48 @@
       </nav>
     </header>
     <section class="jumbotron">
-      <img src="https://source.unsplash.com/user/erondu/1920x900" alt="" class="img-responsive">
+      <div id="background-slider" class="background-slider">
+        <div class="background-slide background-slide-1"></div>
+        <div class="background-slide background-slide-2"></div>
+        <div class="background-slide background-slide-3"></div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="content-slider-container">
+                <div id="content-slider" class="content-slider">
+                  <div class="content-slide">
+                    <h3 class="content-slide-title">Lorem ipsum dolor sit amet</h3>
+                    <p class="content-slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos cumque voluptate sed. Sint accusamus dignissimos enim rem vero totam hic magnam itaque consectetur aspernatur.</p>
+                    <a href="#" class="btn btn-default btn-lg content-slide-cta">Buy Now</a>
+                  </div>
+                  <div class="content-slide">
+                      <h3 class="content-slide-title">Amazing new title goes here</h3>
+                      <p class="content-slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos cumque voluptate sed. Sint accusamus dignissimos enim rem vero totam hic magnam itaque consectetur aspernatur.</p>
+                      <a href="#" class="btn btn-default btn-lg content-slide-cta">Buy Now</a>
+                  </div>
+                  <div class="content-slide">
+                      <h3 class="content-slide-title">Damn son you fancy</h3>
+                      <p class="content-slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos cumque voluptate sed. Sint accusamus dignissimos enim rem vero totam hic magnam itaque consectetur aspernatur.</p>
+                      <a href="#" class="btn btn-default btn-lg content-slide-cta">Buy Now</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-lead">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <h2 class="text-center lead-title">Lorem ipsum dolor sit amet consectetur.</h2>
+            <p class="lead text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reiciendis soluta culpa minima suscipit nihil earum, blanditiis ipsa, quae eius repudiandae doloremque cumque illum quos, veritatis autem ipsum nobis quaerat.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -85,6 +127,7 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

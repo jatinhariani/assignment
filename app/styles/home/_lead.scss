@@ -1,0 +1,22 @@
+.lead {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+.section-lead {
+  padding-top: 40px;
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ccc;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+}
+
+.lead-title {
+  font-size: 42px;
+  margin-top: 0;
+  line-height: 42px;
+}
