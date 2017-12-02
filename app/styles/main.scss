@@ -1,0 +1,17 @@
+$icon-font-path: '../fonts/';
+@import 'variables';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import 'common/header';
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}

@@ -1,0 +1,59 @@
+.navbar {
+  border: none;
+}
+
+.navbar-brand {
+  img {
+    display: block;
+  }
+}
+.main-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  & > li {
+    & > a {
+      
+    }
+  }
+}
+
+.dropdown-menu {
+  padding: 0;
+  & > li {
+    & > a  {
+      padding: 9px 20px 9px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      font-weight: 300;
+      @media screen and (min-width: $screen-sm-min) {
+        &:hover {
+          padding-bottom: 5px;
+          border-bottom: 5px solid $brand-primary;
+        }
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  @media screen and (min-width: $screen-sm-min) {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    a {
+      &:hover {
+        padding-bottom: 10px;
+        border-bottom: 5px solid $brand-primary;
+      }
+    }
+  }
+    // todo: see if using a class makes sense.
+  & > li {
+    & > a {
+      // todo: check. patch for padding i think.
+      padding-top: 14px;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
